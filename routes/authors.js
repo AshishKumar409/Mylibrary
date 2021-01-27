@@ -2,7 +2,7 @@ const router = require('express').Router()
 const Author = require('../models/author')
 
 
-// all authors
+
 router.get('/',async(req,res)=>{
   const specificAuthor ={}
   if(req.query.name!=null && req.query.name!=""){
